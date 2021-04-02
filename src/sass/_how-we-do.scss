@@ -25,22 +25,22 @@ p {
   margin: 0;
 }
 
-.container {
-  @media screen and(max-width: 767px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+// .container {
+//   @media screen and(max-width: 767px) {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
 
-  @media screen and(min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+//   @media screen and(min-width: 768px) {
+//     padding-left: 40px;
+//     padding-right: 40px;
+//   }
 
-  @media screen and (min-width: 1280px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
 
 //  How we do Styles
 
@@ -82,6 +82,7 @@ p {
 
 .card {
   display: flex;
+  align-items: center;
 
   @media screen and(max-width: 767px) {
     flex-direction: column;
