@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+
+.about{
+    @media screen and(max-width: 767px){
+        padding: 40px 0 50px;
+    }
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.about__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
+    
+    color: $main-color;
+}
+
+.teacher{
+
+    &__img{
+        margin-bottom: 20px;
+    }
+
+    &__name{
+        position: relative;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+
+        margin-bottom: 30px;
+
+        color: $main-color;
+        &:after {
+            content: ''; 
+            position: absolute; 
+            background: $secondary-color;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 1px; 
+        }
+    }
+
+    &__description{
+        & p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+
+            margin-bottom: 20px;
+
+            color: $secondary-color;
+
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;  
+
+        margin-top: 10px;
+        
+        text-decoration-line: underline;
+        color: $orange-accent;
+    }
+}
+
+.experience{
+    &__list{
+        position: relative;
+        min-width: 250px;
+        margin-left: 27px;
+        margin-bottom: 45px;
+
+        list-style-image: url(../images/About/check.svg);
+
+        &:after {
+            content: ''; 
+            position: absolute; 
+            background: $orange-accent;
+            left: -26px;
+            bottom: -20px;
+            width: 20px;
+            height: 2px; 
+        }
+    }
+
+    &__item{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+
+        margin-bottom: 20px;
+
+        color: $main-color;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}

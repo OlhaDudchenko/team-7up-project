@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+.guarantee{
+    &__title{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 130%;
+        margin-bottom: 30px;
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $main-color;
+    }
+}
