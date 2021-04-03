@@ -1,60 +1,15 @@
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  @media screen and(max-width: 767px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media screen and(min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-//  How we do Styles
-
 .how-we-do {
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1380px) {
     padding-top: 130px;
     padding-bottom: 130px;
   }
 }
 
 .how-we-do__title {
+  @extend %h2;
   text-align: center;
 
   font-weight: 800;
@@ -67,11 +22,11 @@ p {
     line-height: 1.308;
   }
 
-  @media screen and(max-width: 1279px) {
+  @media screen and(max-width: 1379px) {
     margin-bottom: 30px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1380px) {
     margin-bottom: 50px;
 
     text-align: left;
@@ -81,7 +36,9 @@ p {
 }
 
 .card {
+  @extend %ul;
   display: flex;
+  align-items: center;
 
   @media screen and(max-width: 767px) {
     flex-direction: column;
@@ -90,14 +47,14 @@ p {
 
   @media screen and(min-width: 768px) {
     flex-wrap: wrap;
-    flex-basis: calc(100% / 2 - 40px);
+
     margin-left: -20px;
     margin-top: -27px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1380px) {
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3 - 60px);
+
     margin-left: -20px;
     margin-top: -20px;
   }
@@ -118,7 +75,7 @@ p {
     }
   }
 
-  @media screen and(min-width: 768px) and(max-width: 1279px) {
+  @media screen and(min-width: 768px) and(max-width: 1379px) {
     flex-basis: calc(100% / 2 - 40px);
     margin-left: 20px;
     margin-top: 27px;
@@ -127,17 +84,18 @@ p {
     height: 334px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1380px) {
     flex-basis: calc(100% / 3 - 60px);
     margin-left: 20px;
     margin-top: 20px;
 
-    width: 407px;
+    width: 424px;
     height: 396px;
   }
 }
 
 .card__link {
+  @extend %a;
   display: block;
 
   width: 100%;
@@ -154,8 +112,8 @@ p {
     height: 334px;
   }
 
-  @media screen and(min-width: 1280px) {
-    width: 407px;
+  @media screen and(min-width: 1380px) {
+    width: 424px;
     height: 396px;
   }
 }
@@ -196,6 +154,7 @@ p {
 }
 
 .card__title {
+  @extend %h3;
   position: relative;
 
   margin-bottom: 32px;
@@ -224,17 +183,18 @@ p {
     }
   }
 
-  @media screen and(min-width: 768px) and(max-width: 1279px) {
+  @media screen and(min-width: 768px) and(max-width: 1379px) {
     margin-bottom: 52px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1380px) {
     font-size: 20px;
     line-height: 1.4;
   }
 }
 
 .card__text {
+  @extend %p;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.667;
@@ -247,7 +207,7 @@ p {
     color: $white-accent;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1380px) {
     font-size: 18px;
     line-height: 1.556;
   }
