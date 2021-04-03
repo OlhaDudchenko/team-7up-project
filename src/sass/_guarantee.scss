@@ -13,16 +13,68 @@ a {
 }
 
 .guarantee{
+
+    background: $background-accent;
+
+    & .container{
+        color: $grey-accent;
+        
+    }
+
     &__title{
         font-style: normal;
         font-weight: 800;
         font-size: 26px;
         line-height: 130%;
-        margin-bottom: 30px;
+
+        padding-bottom: 30px;
 
         text-align: center;
         letter-spacing: 0.03em;
 
         color: $main-color;
+        background:#fff;
+
+        & .container{
+            padding: 30px 20px 30px 50px;
+        }
+    }
+
+    &__container{
+        background: $background-accent;
+        
+    }
+
+    &__list{
+        padding: 30px 20px 30px 20px;
+        list-style-image: url(../images/Guarantee/fire-orange.svg);
+    }
+
+    &__item{
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+
+        margin-bottom: 25px;
+        padding-left: 20px;
+        width: 100%;
+
+        color: $grey-accent;
+        
+
+        &:not(:last-child)::after{
+            content: '';
+            border-left: 1px dashed $secondary-color;
+            height: 80px;
+            position: absolute;
+            left: -15px;
+            top: 30px;
+        }
+
+        & span{
+            color: $orange-accent;
+        }
     }
 }
