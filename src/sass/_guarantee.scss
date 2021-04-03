@@ -13,9 +13,12 @@ a {
 }
 
 .guarantee{
+
+    background: $background-accent;
+
     & .container{
         color: $grey-accent;
-        background: $background-accent;
+        
     }
 
     &__title{
@@ -24,12 +27,13 @@ a {
         font-size: 26px;
         line-height: 130%;
 
-        margin-bottom: 30px;
+        padding-bottom: 30px;
 
         text-align: center;
         letter-spacing: 0.03em;
 
         color: $main-color;
+        background:#fff;
 
         & .container{
             padding: 30px 20px 30px 50px;
