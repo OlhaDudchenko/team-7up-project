@@ -1,0 +1,103 @@
+.advantages-list {
+  @extend %ul;
+
+  @media screen and(max-width: 767px) {
+    & :not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    display: flex;
+    & :not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and(min-width: 1380px) {
+    display: flex;
+  }
+}
+.advantages-list__item::before {
+  display: block;
+  content: '';
+  width: 58.82px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and(min-width: 1380px) {
+    width: 100px;
+    height: 102px;
+  }
+}
+.female::before {
+  background-image: url(../images/Advantages/Group1.svg);
+
+  margin-right: 10px;
+  @media screen and(min-width: 1380px) {
+    margin-right: 348px;
+  }
+}
+.mobile::before {
+  background-image: url(../images/Advantages/Group2.svg);
+
+  margin-right: 15.18px;
+  @media screen and(min-width: 1380px) {
+    margin-right: 348px;
+  }
+}
+.insurance::before {
+  background-image: url(../images/Advantages/Group3.svg);
+
+  margin-right: 17.18px;
+  @media screen and(min-width: 1380px) {
+    margin-right: 0;
+  }
+}
+.advantages-list__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.428;
+
+  display: flex;
+  align-items: center;
+
+  color: $main-color;
+  white-space: pre-line;
+  text-align: left;
+
+  @media screen and(min-width:1380px) {
+    position: relative;
+    font-size: 20px;
+    line-height: 1.649;
+  }
+}
+
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 50px;
+  }
+  @media screen and(min-width: 1380px) {
+    padding-top: 106px;
+    padding-bottom: 130px;
+  }
+}
+.advantages__container {
+  display: flex;
+  @media screen and(max-width: 1379px) {
+    justify-content: center;
+  }
+}
+
+.advantages-list__text {
+  max-width: 146px;
+  @media screen and(min-width: 1380px) {
+    position: absolute;
+    top: 18px;
+    left: 82px;
+    min-width: 366px;
+  }
+}
