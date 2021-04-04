@@ -4,6 +4,10 @@
   padding-bottom: 50px;
 
   background-color: $main-color;
+  background-image: url(../images/Program/1program.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right -50px;
+  background-size: 173px 176px;
 
   @media screen and(min-width: 1380px) {
     padding-top: 120px;
