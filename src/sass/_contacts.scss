@@ -1,0 +1,168 @@
+.contacts {
+    background-image: url(../images/footer/DSC_0970_2laptop.png), linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95) );
+    
+    width: auto;
+    height: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: -370px 0px;
+    overflow: hidden;
+}
+
+.contacts__title {
+    
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $white-accent;
+
+    width: 280px;
+
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+}
+
+.title--accent {
+    color: $orange-accent;
+}
+
+.contacts__forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name {
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+}
+
+.form-name__label {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: $white-accent;
+
+    width: 280px;
+
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.form-name__input {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 48px;
+
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    outline: none;
+
+    border: 1px solid $white-accent;
+    background: transparent;
+
+    &[type=text] {
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $white-accent;
+
+        padding-left: 28px;
+    }
+
+    &::placeholder {
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $white-accent;
+    }
+
+    &:not(:placeholder-shown):required:valid  {
+        border: 1px solid $white-accent;
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border: 1px solid red;
+    }
+}
+
+.form-tel__input {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 48px;
+
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    outline: none;
+
+    border: 1px solid $white-accent;
+    background: transparent;
+
+    &[type=text] {
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $white-accent;
+        
+        padding-left: 28px;
+    }
+
+    &::placeholder {
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $white-accent;
+    }
+
+    &:not(:placeholder-shown):required:valid  {
+        border: 1px solid $white-accent;
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border: 1px solid red;
+    }
+}
+
+.contacts__button {
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-accent;
+
+    width: 260px;
+    height: 48px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: $orange-accent;
+
+    border: none;
+}
