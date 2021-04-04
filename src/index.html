@@ -17,18 +17,34 @@
     />
   </head>
   <body>
+
+    <include src="./partials/header.html"></include>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
 
     <main>
-<include src="./partials/advantages.html"></include>
-    <include src="./partials/how-we-do.html"></include>
+    
+      <include src="./partials/hero.html"></include>
+      
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/how-we-do.html"></include>
 
-    <include src="./partials/about.html"></include>
-    <include src="./partials/guarantee.html"></include>
-    <include src="./partials/contacts.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/guarantee.html"></include>
+      <include src="./partials/contacts.html"></include>
     </main>
 
+
+    <!-- Файл скрипта для мобильного меню -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
+
+    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
