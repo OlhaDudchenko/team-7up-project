@@ -13,9 +13,10 @@ a {
 }
 
 .guarantee{
-
-    background: $background-accent;
-
+    @media screen and (max-width:767px) {
+        background: $background-accent;
+    }
+    
     & .container{
         color: $grey-accent;
         
@@ -42,12 +43,19 @@ a {
 
     &__container{
         background: $background-accent;
-        
+        @media screen and (min-width:768px) and (max-width:1379px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__list{
         padding: 30px 20px 30px 20px;
         list-style-image: url(../images/Guarantee/fire-orange.svg);
+
+        @media screen and (min-width:768px) and (max-width:1379px) {
+            padding: 30px 20px 30px 100px;
+        }
     }
 
     &__item{
@@ -62,6 +70,10 @@ a {
         width: 100%;
 
         color: $grey-accent;
+
+        @media screen and (min-width:768px) and (max-width:1379px){
+            margin-bottom: 20px;    
+        }
         
 
         &:not(:last-child)::after{
@@ -71,6 +83,10 @@ a {
             position: absolute;
             left: -15px;
             top: 30px;
+            @media screen and (min-width:768px) and (max-width:1379px){
+                height: 35px;
+                top:27px;
+            }
         }
 
         & span{
