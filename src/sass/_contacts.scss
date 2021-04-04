@@ -1,13 +1,13 @@
 .contacts {
-    background-image:url(../images/footer/DSC_0970_2footer.png),  linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95) );
-    // width: ;
-    height: 507px;
-    // background-size: auto 400px;
+    background-image: url(../images/footer/DSC_0970_2laptop.png), linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95) );
+    
+    width: auto;
+    height: auto;
+
     padding-top: 50px;
     padding-bottom: 50px;
-    background-size: cover;
-    background-position: -400px 0px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-position: -370px 0px;
+    overflow: hidden;
 }
 
 .contacts__title {

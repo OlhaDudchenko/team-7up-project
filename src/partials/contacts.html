@@ -7,7 +7,9 @@
                     <span class="title--accent">бесплатном занятии.</span> <br>С вами свяжется консультант и ответит на вопросы</label>
                 <input class="form-name__input form-name__input--target" 
                 type="text" 
-                name="name" 
+                name="name"
+                pattern="^[A-Za-zА-Яа-яЁё]+\s[A-Za-zА-Яа-яЁё]+$"
+                title="Имя пользователя должно состоять из двух слов, разделенных пробелом." 
                 id="name"
                 placeholder="Имя*">
             </div>
@@ -15,6 +17,8 @@
                 <input class="form-tel__input form-tel__input--target" 
                 type="text" 
                 name="tel" 
+                pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                title="Введите десятизначный номер телефона абонента."
                 id="tel"
                 placeholder="Телефон*">
             </div>
