@@ -1,0 +1,128 @@
+body {
+  counter-reset: pages;
+}
+
+.problems__item {
+  counter-increment: pages;
+  position: relative;
+  font-size: 14px;
+
+  font-weight: 700;
+  line-height: 1.714;
+  color: $main-color;
+  @media screen and(min-width: 768px) {
+    line-height: 1.428;
+    flex-basis: calc((100% - 80px) / 2);
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  @media screen and(min-width: 1380px) {
+    line-height: 1.219;
+    flex-basis: calc((100% - 120px) / 3);
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
+
+.problems__item::before {
+  content: '0' counter(pages);
+
+  display: block;
+  margin-left: 28px;
+  color: $orange-accent;
+}
+.problems__item::after {
+  content: '';
+  position: absolute;
+
+  top: 10px;
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background-color: $orange-accent;
+}
+.problems__list {
+  @extend %ul;
+
+  @media screen and(max-width: 767px) {
+    & :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and(min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+}
+.problems__title {
+  @extend %h2;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $white-accent;
+  white-space: pre-line;
+  margin-bottom: 27px;
+  //   max-height: 128px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+    font-size: 26px;
+
+    line-height: 1.3;
+  }
+
+  @media screen and(min-width:1380px) {
+    font-size: 46px;
+
+    line-height: 1.3;
+    margin-bottom: 70px;
+  }
+}
+.problems {
+  background-color: $main-color;
+  padding-top: 50px;
+
+  background-image: linear-gradient($main-color 545px, $white-accent 149px);
+  @media screen and (min-width: 768px) {
+    padding-top: 59.5px;
+    background-image: linear-gradient($main-color 340px, $white-accent 151.5px);
+  }
+
+  @media screen and (min-width: 1380px) {
+    padding-top: 100px;
+    padding-right: 183px;
+    padding-left: 183px;
+    background-image: url(../images/problems/blackfire.svg),
+      linear-gradient($main-color 560px, $white-accent 150px);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.problems__wrapper {
+  max-height: 488px;
+  max-width: 280px;
+  padding: 20px 14px 20px 30px;
+
+  background-color: $white-accent;
+  box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.4);
+
+  @media screen and (min-width: 768px) {
+    max-height: 303px;
+    max-width: 688px;
+    padding: 30px 46.8px 26px 96px;
+  }
+  @media screen and (min-width: 1380px) {
+    max-height: 362px;
+    max-width: 1314px;
+    padding: 70px 112px 62px 114px;
+  }
+}
+.problems__accent {
+  color: $orange-accent;
+}
