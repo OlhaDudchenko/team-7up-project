@@ -105,9 +105,10 @@ body {
 }
 
 .problems__wrapper {
-  max-height: 488px;
-  max-width: 280px;
+  min-height: 488px;
+  min-width: 280px;
   padding: 20px 14px 20px 30px;
+  margin: auto;
 
   background-color: $white-accent;
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.4);
