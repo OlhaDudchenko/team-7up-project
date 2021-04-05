@@ -7,7 +7,7 @@
 
   @media screen and(min-width: 1380px) {
     padding-top: 120px;
-    padding-bottom: 363px;
+    padding-bottom: 0;
   }
 }
 
@@ -17,11 +17,20 @@
 
   background-size: 176px 137px;
 
-  background-position: bottom 580px right -50px;
+  background-position: bottom 620px right -50px;
   @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and(min-width: 768px) {
+    background-size: 384px 280px;
+    background-position: bottom 500px right -50px;
+  }
+  @media screen and(min-width: 1380px) {
+    background-size: 760px 502px;
+    background-position: bottom 250px left -50px;
   }
 }
 
@@ -55,6 +64,7 @@
 }
 
 .program__list {
+  @extend%ul;
   @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -64,10 +74,12 @@
 
   @media screen and(min-width: 768px) and(max-width: 1379px) {
     padding-left: 47px;
+    margin-bottom: 189px;
   }
 
   @media screen and(min-width: 1380px) {
     display: flex;
+    margin-bottom: 164px;
   }
 }
 
@@ -137,6 +149,8 @@
 }
 
 .semestr__set {
+  @extend%ul;
+
   @media screen and(min-width: 768px) and(max-width: 1379px) {
     display: flex;
     align-items: baseline;
@@ -229,6 +243,7 @@
   height: 32px;
 
   color: $orange-accent;
+  @extend%ul;
 
   @media screen and(max-width: 1379px) {
     margin-bottom: 5px;
@@ -258,6 +273,7 @@
 
   color: $secondary-color;
   opacity: 0.5;
+  @extend%ul;
 
   @media screen and(min-width: 768px) and(max-width: 1379px) {
     font-size: 12px;

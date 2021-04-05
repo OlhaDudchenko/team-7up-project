@@ -95,8 +95,7 @@ body {
 
   @media screen and (min-width: 1380px) {
     padding-top: 100px;
-    padding-right: 183px;
-    padding-left: 183px;
+
     background-image: url(../images/problems/blackfire.svg),
       linear-gradient($main-color 560px, $white-accent 150px);
     background-repeat: no-repeat;
@@ -114,8 +113,8 @@ body {
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.4);
 
   @media screen and (min-width: 768px) {
-    max-height: 303px;
-    max-width: 688px;
+    min-height: 303px;
+    min-width: 688px;
     padding: 30px 46.8px 26px 96px;
   }
   @media screen and (min-width: 1380px) {
