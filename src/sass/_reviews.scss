@@ -1,15 +1,15 @@
 li {
   list-style: none;
 }
+.reviews__page {
+  background-color: $white-accent;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 @media screen and(min-width: 1380px) {
-  .reviews__page {
-    background-color: $white-accent;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .reviews__thumb {
+ .reviews__thumb {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     margin-left: 20px;
     margin-right: 20px;
@@ -142,12 +142,7 @@ li {
 }
 
 @media screen and(min-width: 768px) and(max-width:1379px) {
-  .reviews__page {
-    background-color: $white-accent;
-    justify-content: center;
-    text-align: center;
-  }
-
+  
   .reviews__thumb {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     margin-left: 20px;
@@ -284,12 +279,7 @@ li {
 }
 
 @media screen and (max-width: 767px) {
-  .reviews__page {
-    background-color: $white-accent;
-    justify-content: center;
-    text-align: center;
-  }
-
+  
   .reviews__thumb {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     margin-left: 20px;
