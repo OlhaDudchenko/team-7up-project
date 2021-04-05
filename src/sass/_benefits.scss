@@ -92,21 +92,14 @@
   }
 }
 .benefits {
-  background-color: $main-color;
-
-  background-image: linear-gradient($main-color 487px, $white-accent 231px);
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient($main-color 203px, $white-accent 25px);
   }
 
   @media screen and (min-width: 1380px) {
-    // padding-top: 100px;
-    // padding-right: 183px;
-    // padding-left: 183px;
     background-image: linear-gradient($main-color 560px, $white-accent 150px);
-    // background-repeat: no-repeat;
-    // background-position: right;
   }
 }
 

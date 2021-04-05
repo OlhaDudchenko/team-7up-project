@@ -3,11 +3,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  background-color: $main-color;
-  background-image: url(../images/Program/1program.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom right -50px;
-  background-size: 173px 176px;
+  background: linear-gradient(#111518 88%, $white-accent 12%);
 
   @media screen and(min-width: 1380px) {
     padding-top: 120px;
@@ -16,6 +12,12 @@
 }
 
 .program__container {
+  background-image: url(../images/problems/benefits.png);
+  background-repeat: no-repeat;
+  background-position: top right -50px;
+  background-size: 176px 137px;
+
+  background-position: bottom 670px right -60px;
   @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-left: 100px;
+    padding-left: 80px;
   }
 
   @media screen and(min-width: 768px) and(max-width: 1379px) {
@@ -74,7 +76,7 @@
 
   @media screen and(max-width: 767px) {
     margin-bottom: 40px;
-    padding-left: 26px;
+    padding-left: 20px;
   }
 
   @media screen and(min-width: 768px) and(max-width: 1379px) {
@@ -195,7 +197,7 @@
     background-color: $orange-accent;
 
     @media screen and(max-width: 767px) {
-      right: calc(100% + 20px);
+      right: calc(100% + 14px);
       top: 50%;
       transform: translateY(-50%);
       width: 12px;
