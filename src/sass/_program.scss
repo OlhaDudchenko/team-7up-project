@@ -14,10 +14,10 @@
 .program__container {
   background-image: url(../images/problems/benefits.png);
   background-repeat: no-repeat;
-  background-position: top right -50px;
+
   background-size: 176px 137px;
 
-  background-position: bottom 670px right -60px;
+  background-position: bottom 580px right -50px;
   @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
