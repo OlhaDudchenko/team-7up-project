@@ -1,25 +1,18 @@
-.hero::after {
-    content: "";
+.hero {
     background-image: url(/images/hero/curve.svg);
-    position: absolute;
-    top: 132px;
-    left: -64px;
-    width: 770px;
-    height: 570px;
-    z-index: 1;
+    background-position: bottom left -64px;
+    background-repeat: no-repeat;
 }
 
 .hero-container {
     position: relative;
-    height: 500px;
-    z-index: 3;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .hero__title {
     margin-top: 0px; 
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 136%;
@@ -30,8 +23,6 @@
 .hero__subtitle-1 {
     margin-top: 0px; 
     margin-bottom: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -42,8 +33,6 @@
 .hero__subtitle-2 {
     margin-top: 0px; 
     margin-bottom: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -54,8 +43,6 @@
 .hero__subtitle-3 {
     margin-top: 0px; 
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -75,8 +62,6 @@
     margin-bottom: 30px;
     border: none;
     background-color: $orange-accent;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;   
     line-height: 15px;
