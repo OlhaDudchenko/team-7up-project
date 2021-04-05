@@ -2,15 +2,6 @@
     padding: 0;
     margin: 0;
 }
-ul {
-    list-style: none;
-}
-  
-a {
-    text-decoration: none;
-    color: inherit;
-    outline: none;
-}
 
 .guarantee{
     padding-bottom: 50px;
@@ -29,6 +20,7 @@ a {
     }
 
     &__title{
+        @extend %h2;
         font-style: normal;
         font-weight: 800;
         font-size: 26px;
@@ -60,6 +52,8 @@ a {
     }
 
     &__list{
+        @extend %ul;
+        
         padding: 30px 20px 30px 20px;
         list-style-image: url(../images/Guarantee/fire-orange.svg);
 

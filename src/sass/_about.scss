@@ -2,16 +2,6 @@
     padding: 0;
     margin: 0;
 }
-ul {
-    list-style: none;
-}
-  
-a {
-    text-decoration: none;
-    color: inherit;
-    outline: none;
-}
-
 
 .about{
     @media screen and(max-width: 767px){
@@ -30,6 +20,8 @@ a {
 }
 
 .about__title{
+    @extend %h2;
+
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -82,6 +74,8 @@ a {
     }
 
     &__name{
+        @extend %h3;
+
         position: relative;
         font-style: normal;
         font-weight: 800;
@@ -111,6 +105,8 @@ a {
 
     &__description{
         & p{
+            @extend %p;
+
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
@@ -133,6 +129,8 @@ a {
     }
 
     &__link{
+        @extend %a;
+
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -150,6 +148,8 @@ a {
 
 .experience{
     &__list{
+        @extend %ul;
+
         position: relative;
         min-width: 250px;
         margin-left: 27px;
