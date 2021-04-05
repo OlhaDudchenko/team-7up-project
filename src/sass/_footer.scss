@@ -98,6 +98,20 @@
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
-    
+}
 
+.footer-secondary {
+    background-color: $main-color;
+}
+
+.footer-secondary__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: $secondary-color;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
