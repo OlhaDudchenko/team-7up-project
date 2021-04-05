@@ -13,8 +13,14 @@ a {
 }
 
 .guarantee{
+    padding-bottom: 50px;
+
     @media screen and (max-width:767px) {
         background: $background-accent;
+    }
+
+    @media screen and (min-width:1380px){
+        padding-bottom: 130px;
     }
     
     & .container{
@@ -36,6 +42,10 @@ a {
         color: $main-color;
         background:#fff;
 
+        @media screen and (min-width:1380px){
+            font-size: 46px;
+        }
+
         & .container{
             padding: 30px 20px 30px 50px;
         }
@@ -56,6 +66,11 @@ a {
         @media screen and (min-width:768px) and (max-width:1379px) {
             padding: 30px 20px 30px 100px;
         }
+
+        @media screen and (min-width:1380px){
+            padding: 50px 112px 45px 165px;
+            list-style-image: url(../images/Guarantee/fire-orange-desk.svg);
+        }
     }
 
     &__item{
@@ -74,6 +89,12 @@ a {
         @media screen and (min-width:768px) and (max-width:1379px){
             margin-bottom: 20px;    
         }
+
+        @media screen and (min-width:1380px){
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 28px;
+        }
         
 
         &:not(:last-child)::after{
@@ -83,9 +104,16 @@ a {
             position: absolute;
             left: -15px;
             top: 30px;
+
             @media screen and (min-width:768px) and (max-width:1379px){
                 height: 35px;
                 top:27px;
+            }
+            
+            @media screen and (min-width:1380px){
+                height: 40px;
+                top:40px;
+                left: -18px;
             }
         }
 
