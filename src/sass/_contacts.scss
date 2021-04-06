@@ -73,6 +73,14 @@
 
 }
 
+.form-tel {
+    margin-bottom: 30px;
+
+    @media screen and(min-width: 1380px) {
+        margin-bottom: 80px;
+    }
+}
+
 .form-name__label {
 
     font-weight: 600;
@@ -175,7 +183,6 @@
     height: 48px;
 
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
 
     outline: none;
@@ -218,7 +225,6 @@
     @media screen and(min-width: 1380px) {
         width: 478px;
         height: 70px;
-        margin-bottom: 80px;
 
         &[type=text] {
             font-size: 20px;
