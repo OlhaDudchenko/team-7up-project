@@ -13,6 +13,8 @@
 .footer-main {
     background-color: $white-accent;
 
+    margin-bottom: 30px;
+
     @media screen and(min-width: 768px) and(max-width:1379px) {
         display: flex;
 
@@ -143,20 +145,21 @@
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
 
     &__img {
         margin-right: 10px;
     }
 
+    &__text {
+        text-decoration: none;
+    }
+
     @media screen and(min-width: 768px) and(max-width:1379px) {
         font-size: 20px;
-
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
-
+        margin: 0px;
         padding-right: 24px;
-        
+        height: 40px;
         border-right: 1px solid $secondary-color;
     
         &__img {
@@ -165,12 +168,10 @@
     }
 
     @media screen and(min-width: 1380px) {
+        height: 40px;
         font-size: 30px;
         max-height: 40px;
-
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin: 0px;
 
         padding-right: 16px;
         
@@ -183,19 +184,18 @@
 }
 
 .footer-instagram {
-    display: block;
+    display: flex;
 
     background-image: url(../images/footer/instagram-gradient.svg); 
 
     width: 40px;
     height: 40px;
 
-    margin-top: 30px;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
 
     @media screen and(min-width: 768px) and(max-width:1379px) {
+
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 24px;
@@ -208,7 +208,7 @@
     }
 }
 
-.footer-secondary {
+.copyright {
     background-color: $main-color;
 
     @media screen and(min-width: 768px) and(max-width:1379px) {
@@ -220,7 +220,7 @@
     }
 }
 
-.footer-secondary__text {
+.copyright__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
