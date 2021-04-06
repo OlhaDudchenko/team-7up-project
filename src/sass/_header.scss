@@ -26,7 +26,7 @@
   background-color: $white-accent;
   border: none;
   outline: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animated(color);
   cursor: pointer;
 }
 
@@ -43,15 +43,16 @@
   padding-bottom: 34px;
   transform: translateX(100%);
   background-color: rgba(17, 21, 24, 0.9);
-  z-index: 4;
-  // @media screen and(min-width:1380px) {
-  //   display: none;
-  // }
+  @include animated(transform);
+
+  @media screen and(min-width:1380px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
   transform: translateX(0);
-  z-index: 4;
+  z-index: 1;
 }
 
 /* BUTTON CLOSE MOBILE MENU */
@@ -69,46 +70,39 @@
   padding: 0;
   background-color: transparent;
   border: none;
-  outline: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include animated(color);
   cursor: pointer;
-  z-index: 4;
 }
 
 .menu-logo__hell {
   margin-right: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+
   font-weight: 800;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.23;
   letter-spacing: 0.04em;
   color: $white-accent;
-  z-index: 4;
 }
 
 .menu-logo__en {
   margin-left: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+
   font-weight: 800;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.23;
   letter-spacing: 0.04em;
   color: $white-accent;
-  z-index: 4;
 }
 
 .menu-logo__hellen {
   margin-top: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   letter-spacing: 0.18em;
   color: $white-accent;
-  z-index: 4;
 }
 
 /* MOBILE MENU NAV */
@@ -116,29 +110,24 @@
   @extend%ul;
   margin-top: 50px;
   margin-bottom: 50px;
-  z-index: 4;
 }
 
 .mobile-nav__link {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
-  line-height: 180%;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: $white-accent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 4;
+  @include animated(color);
 }
 
-.mobile-nav__link:hover {
+.mobile-nav__link:hover,
+.mobile-nav__link:focus {
   color: $orange-accent;
-  z-index: 4;
 }
 
 .mobile-nav__link--current {
   color: $orange-accent;
-  z-index: 4;
 }
 
 /* MOBILE MENU BUTTON */
@@ -151,22 +140,17 @@
   padding-bottom: 14px;
   border: 2px solid $orange-accent;
   background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   letter-spacing: 0.08em;
   color: $orange-accent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animated(color);
   cursor: pointer;
-  z-index: 4;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: transparent;
   color: $orange-accent;
-  z-index: 4;
 }
