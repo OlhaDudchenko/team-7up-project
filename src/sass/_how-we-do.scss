@@ -69,7 +69,7 @@
 
   @media screen and(max-width: 767px) {
     width: 280px;
-    // height: 280px;
+
     &:not(:last-child) {
       margin-bottom: 15px;
     }
@@ -81,7 +81,7 @@
     margin-top: 27px;
 
     width: 334px;
-    // height: 334px;
+    height: 334px;
   }
 
   @media screen and(min-width: 1380px) {
@@ -90,7 +90,7 @@
     margin-top: 20px;
 
     width: 424px;
-    // height: 396px;
+    height: 396px;
   }
 }
 
@@ -110,8 +110,9 @@
 
   @media screen and(min-width: 768px) {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     width: 324px;
+    height: 334px;
   }
 
   @media screen and(min-width: 1380px) {
@@ -127,11 +128,11 @@
 }
 
 .card__thumb {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @media screen and(min-width: 768px) {
     // padding-top: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
