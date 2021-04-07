@@ -1,98 +1,45 @@
-* {
-  padding: 0;
-  margin: 0;
+*{
+    padding: 0;
+    margin: 0;
 }
-
-
-.guarantee {
-  padding-bottom: 50px;
-
-  @media screen and (max-width: 767px) {
-    background: $background-accent;
-  }
-
-  @media screen and (min-width: 1380px) {
-    padding-bottom: 130px;
-  }
-
-  & .container {
-    color: $grey-accent;
-  }
-
-  &__title {
-    @extend %h2;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 130%;
-
-    margin-bottom: 30px;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $main-color;
-    background: #fff;
-
-    @media screen and (min-width: 1380px) {
-      font-size: 46px;
 
 .guarantee{
 
     @media screen and (max-width:767px) {
         background: linear-gradient($white-accent 10%, $background-accent 10%);
-
     }
 
-    & .container {
-      padding: 30px 20px 30px 50px;
+    @media screen and (min-width:1380px){
+        padding-bottom: 130px;
     }
-  }
-
-  &__container {
-    background: $background-accent;
-    @media screen and (min-width: 768px) and (max-width: 1379px) {
-      display: flex;
-      justify-content: center;
+    
+    & .container{
+        color: $grey-accent;
+        
     }
-  }
 
-  &__list {
-    @extend %ul;
-
-
-    padding: 30px 20px 30px 20px;
-    list-style-image: url(../images/Guarantee/fire-orange.svg);
+    &__title{
+        @extend %h2;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 130%;
 
         margin-bottom: 30px;
 
-
-    @media screen and (min-width: 768px) and (max-width: 1379px) {
-      padding: 30px 20px 30px 100px;
-    }
-
-
-    @media screen and (min-width: 1380px) {
-      padding: 50px 112px 45px 165px;
-      list-style-image: url(../images/Guarantee/fire-orange-desk.svg);
-    }
-  }
+        text-align: center;
+        letter-spacing: 0.03em;
 
         color: $main-color;
 
+        @media screen and (min-width:1380px){
+            font-size: 46px;
+        }
 
-  &__item {
-    position: relative;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-
-    margin-bottom: 25px;
-    padding-left: 20px;
-    width: 100%;
-
-    color: $grey-accent;
+        & .container{
+            padding: 30px 20px 30px 50px;
+        }
+    }
 
     &__container{
         
@@ -105,40 +52,21 @@
         }
     }
 
+    &__list{
+        @extend %ul;
+        
+        padding: 30px 20px 30px 20px;
+        list-style-image: url(../images/Guarantee/fire-orange.svg);
 
-    @media screen and (min-width: 768px) and (max-width: 1379px) {
-      margin-bottom: 20px;
+        @media screen and (min-width:768px) and (max-width:1379px) {
+            padding: 30px 20px 30px 100px;
+        }
+
+        @media screen and (min-width:1380px){
+            padding: 50px 112px 45px 165px;
+            list-style-image: url(../images/Guarantee/fire-orange-desk.svg);
+        }
     }
-
-    @media screen and (min-width: 1380px) {
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 28px;
-    }
-
-    &:not(:last-child)::after {
-      content: '';
-      border-left: 1px dashed $secondary-color;
-      height: 80px;
-      position: absolute;
-      left: -15px;
-      top: 30px;
-
-      @media screen and (min-width: 768px) and (max-width: 1379px) {
-        height: 35px;
-        top: 27px;
-      }
-
-      @media screen and (min-width: 1380px) {
-        height: 40px;
-        top: 40px;
-        left: -18px;
-      }
-    }
-
-
-    & span {
-      color: $orange-accent;
 
     &__item{
         position: relative;
@@ -199,7 +127,5 @@
         & span{
             color: $orange-accent;
         }
-
     }
-  }
 }

@@ -53,7 +53,7 @@
   line-height: 22px;
   letter-spacing: 0.03em;
   color: $grey-accent;
-
+  
   @media screen and(min-width:1380px) {
     font-size: 20px;
     line-height: 165%;
@@ -91,6 +91,7 @@
     line-height: 165%;
   }
 }
+
 
 /* HERO BUTTON */
 .button-hero {
@@ -163,5 +164,4 @@
 
 .button__lesson {
   @extend%a;
-  text-transform: uppercase;
 }

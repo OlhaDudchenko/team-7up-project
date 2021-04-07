@@ -5,66 +5,71 @@
   background: linear-gradient(#111518 88%, $white-accent 12%);
 }
 
-.program__container {
+.program__container{
+
   position: relative;
 
   @media screen and(min-width: 1380px) {
-    padding-top: 120px;
-    padding-bottom: 0;
-
-    &::after {
-      position: absolute;
-      content: '';
-      left: -167px;
-      top: 530px;
-
-      width: 672px;
-      height: 502px;
-      z-index: 0;
-
-      background-image: url(../images/Program/desktop1x.png);
-
-      background-size: 672px 502px;
+      padding-top: 120px;
+      padding-bottom: 0;
+  
+      &::after {
+        position: absolute;
+        content: "";
+        left: -167px;
+        top: 530px;
+      
+        width: 672px;
+        height: 502px;
+        z-index: 0;
+        
+        opacity: 0.5;
+        background-image: url(../images/Program/desktop1x.png);
+      
+        background-size: 672px 502px;
+      }
     }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1379px) {
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0px;
-      bottom: 510px;
-
-      width: 384px;
-      height: 280px;
-
-      background-image: url(../images/Program/tablet1x.png);
-
-      background-size: 384px 280px;
+  
+    @media screen and (min-width:768px) and (max-width:1379px) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        bottom: 510px;
+      
+        width: 384px;
+        height: 280px;
+        
+        opacity: 0.5;
+        background-image: url(../images/Program/tablet1x.png);
+      
+        background-size: 384px 280px;
+      }
     }
-  }
-
-  @media screen and(max-width: 767px) {
-    &::after {
-      content: '';
-      position: absolute;
-      left: 195px;
-      top: 1440px;
-
-      width: 126px;
-      height: 137px;
-
-      background-image: url(../images/Program/mobile1x.png);
-
-      background-size: 126px 137px;
+  
+    @media screen and(max-width: 767px){
+      &::after {
+        content: "";
+        position: absolute;
+        left: 195px;
+        top: 1440px;
+      
+        width: 126px;
+        height: 137px;
+        
+        opacity: 0.5;
+        background-image: url(../images/Program/mobile1x.png);
+      
+        background-size: 126px 137px;
+      }
     }
-  }
 }
 
-.benefits {
+.benefits{
   position: relative;
   z-index: 1;
 }
+
 
 .program__title {
   @extend %h2;
