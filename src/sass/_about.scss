@@ -65,7 +65,8 @@
 
     &__img{
         @media screen and (max-width:767px) {
-            margin-bottom: 20px;     
+            margin-bottom: 20px; 
+            margin-right: 37px;    
         }
         @media screen and (min-width:1380px) {
             min-width: 530px;
