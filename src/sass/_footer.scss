@@ -56,7 +56,6 @@
 
 .footer-logo__hell {
     margin-right: 4px;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -76,7 +75,6 @@
 
 .footer-logo__en {
     margin-left: 4px;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -95,7 +93,6 @@
 }
 
 .footer-logo__hellen {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 5px;
@@ -130,11 +127,10 @@
 }
 
 .footer-contact {
-
+    text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: 0.08em;
     text-align: center;
     color: $main-color;
 
@@ -149,10 +145,6 @@
 
     &__img {
         margin-right: 10px;
-    }
-
-    &__text {
-        text-decoration: none;
     }
 
     @media screen and(min-width: 768px) and(max-width:1379px) {
@@ -224,7 +216,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
-    letter-spacing: 0.08em;
     text-align: center;
     color: $secondary-color;
 
