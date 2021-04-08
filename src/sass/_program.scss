@@ -130,7 +130,7 @@
 
   @media screen and(min-width: 1380px) {
     padding-top: 60px;
-    width: 240px;
+    width: 228px;
 
     & + & {
       margin-left: 30px;
@@ -173,7 +173,7 @@
       background-color: $white-accent;
       height: calc(100% + 30px);
       width: 1px;
-      left: 50px;
+      // left: 50px;
       top: -281px;
       transform: rotate(90deg);
     }
@@ -259,7 +259,7 @@
     }
 
     @media screen and(min-width: 1380px) {
-      top: -52px;
+      top: -41px;
       left: 0;
       width: 17px;
       height: 16px;
