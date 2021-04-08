@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and(min-width:1378px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+
 .hero {
   position: relative;
   padding-top: 51px;
@@ -149,10 +155,10 @@
   }
 
   @media screen and(min-width:1380px) {
-    width: 810px;
+    width: 710px;
     position: absolute;
     top: 46px;
-    left: 600px;
+    left: 550px;
   }
 }
 
