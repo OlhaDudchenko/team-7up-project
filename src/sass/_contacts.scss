@@ -1,259 +1,247 @@
 .contacts {
-    background-image: url(../images/footer/DSC_0970_2laptop.png), linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95) );
-    
-    width: auto;
-    height: auto;
+  background-image: url(../images/footer/DSC_0970_2laptop.png),
+    linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-position: -370px 0px;
-    overflow: hidden;
+  width: auto;
+  height: auto;
 
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: -370px 0px;
+  overflow: hidden;
 
-    @media screen and(min-width: 768px) and(max-width:1379px) {
-        background-position: inherit;
-        height: 520px;
-        box-shadow: none;
-    }
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-    @media screen and(min-width: 1380px) {
-        background-image: url(../images/footer/DSC_0970_2desktop.png), linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95) );
-        background-position: 0vmax;
-        height: 840px;
-        padding-top: 100px;
-        box-shadow: none;
-    }
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    background-position: inherit;
+    height: 520px;
+    box-shadow: none;
+  }
 
+  @media screen and(min-width: 1380px) {
+    background-image: url(../images/footer/DSC_0970_2desktop.png),
+      linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    background-position: 0vmax;
+    height: 840px;
+    padding-top: 100px;
+    box-shadow: none;
+  }
 }
 
 .contacts__title {
-    
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $white-accent;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $white-accent;
 
-    width: 280px;
+  width: 280px;
 
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
 
-    @media screen and(min-width: 768px) and(max-width:1379px) {
-        font-size: 26px;
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    font-size: 26px;
 
-        width: 688px;
-    }
+    width: 688px;
+  }
 
-    @media screen and(min-width: 1380px) {
-        font-size: 46px;
+  @media screen and(min-width: 1380px) {
+    font-size: 46px;
 
-        width: 1090px;
+    width: 1090px;
 
-        margin-bottom: 50px;
-    }
-
+    margin-bottom: 50px;
+  }
 }
 
 .title--accent {
-    color: $orange-accent;
+  color: $orange-accent;
 }
 
 .contacts__forms {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-name {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .form-tel {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media screen and(min-width: 1380px) {
-        margin-bottom: 80px;
-    }
+  @media screen and(min-width: 1380px) {
+    margin-bottom: 80px;
+  }
 }
 
 .form-name__label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: $white-accent;
 
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.3;
-    text-align: center;
-    color: $white-accent;
+  width: 280px;
 
-    width: 280px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
 
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    font-size: 14px;
+    line-height: 1.2;
 
-    @media screen and(min-width: 768px) and(max-width:1379px) {
-        font-size: 14px;
-        line-height: 1.2;
+    width: 452px;
 
-        width: 452px;
+    margin-bottom: 40px;
+  }
 
-        margin-bottom: 40px;
-    }
+  @media screen and(min-width: 1380px) {
+    font-size: 30px;
 
-    @media screen and(min-width: 1380px) {
-        font-size: 30px;
+    width: 1090px;
 
-        width: 1090px;
-
-        margin-bottom: 56px;
-    }
+    margin-bottom: 56px;
+  }
 }
 
 .form-name__input {
-    display: flex;
-    justify-content: center;
-    width: 280px;
-    height: 48px;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 48px;
 
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
 
-    outline: none;
+  border: 1px solid $white-accent;
+  background: transparent;
 
+  &[type='text'] {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white-accent;
+
+    padding-left: 28px;
+  }
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white-accent;
+  }
+
+  &:not(:placeholder-shown):required:valid {
     border: 1px solid $white-accent;
-    background: transparent;
+  }
 
-    &[type=text] {
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid red;
+  }
 
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        color: $white-accent;
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    width: 390px;
+  }
 
-        padding-left: 28px;
+  @media screen and(min-width: 1380px) {
+    width: 478px;
+    height: 70px;
+
+    &[type='text'] {
+      font-size: 20px;
+      padding-left: 40px;
     }
 
     &::placeholder {
-
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        color: $white-accent;
+      font-size: 20px;
     }
-
-    &:not(:placeholder-shown):required:valid  {
-        border: 1px solid $white-accent;
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        border: 1px solid red;
-    }
-
-    @media screen and(min-width: 768px) and(max-width:1379px) {
-        width: 390px;
-    }
-
-    @media screen and(min-width: 1380px) {
-        width: 478px;
-        height: 70px;
-
-        &[type=text] {
-            font-size: 20px;
-            padding-left: 40px;
-        }
-
-        &::placeholder {
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 .form-tel__input {
-    display: flex;
-    justify-content: center;
-    width: 280px;
-    height: 48px;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 48px;
 
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 
-    outline: none;
+  border: 1px solid $white-accent;
+  background: transparent;
 
+  &[type='text'] {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white-accent;
+
+    padding-left: 28px;
+  }
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white-accent;
+  }
+
+  &:not(:placeholder-shown):required:valid {
     border: 1px solid $white-accent;
-    background: transparent;
+  }
 
-    &[type=text] {
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid red;
+  }
 
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        color: $white-accent;
-        
-        padding-left: 28px;
+  @media screen and(min-width: 768px) and(max-width:1379px) {
+    width: 390px;
+  }
+
+  @media screen and(min-width: 1380px) {
+    width: 478px;
+    height: 70px;
+
+    &[type='text'] {
+      font-size: 20px;
+      padding-left: 40px;
     }
 
     &::placeholder {
-
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        color: $white-accent;
+      font-size: 20px;
     }
-
-    &:not(:placeholder-shown):required:valid  {
-        border: 1px solid $white-accent;
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        border: 1px solid red;
-    }
-
-    @media screen and(min-width: 768px) and(max-width:1379px) {
-        width: 390px;
-    }
-
-    @media screen and(min-width: 1380px) {
-        width: 478px;
-        height: 70px;
-
-        &[type=text] {
-            font-size: 20px;
-            padding-left: 40px;
-        }
-
-        &::placeholder {
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 .contacts__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-accent;
 
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.3;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white-accent;
+  width: 260px;
+  height: 48px;
 
-    width: 260px;
-    height: 48px;
+  margin-right: auto;
+  margin-left: auto;
 
-    margin-right: auto;
-    margin-left: auto;
+  background-color: $orange-accent;
 
-    background-color: $orange-accent;
+  border: none;
 
-    border: none;
-
-    @media screen and(min-width: 1380px) {
-        font-size: 14px;
-        width: 354px;
-        height: 70px;
-    }
+  @media screen and(min-width: 1380px) {
+    font-size: 14px;
+    width: 354px;
+    height: 70px;
+  }
 }
