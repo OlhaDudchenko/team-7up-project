@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.about {
+  @media screen and(max-width: 767px) {
+    padding: 40px 0 50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1379px) {
+    padding: 50px 0;
+  }
+  @media screen and (min-width: 1380px) {
+    padding: 130px 0;
+  }
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.about__title {
+  @extend %h2;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+
+  color: $main-color;
+
+  @media screen and(min-width:768px) and (max-width: 1379px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1380px) {
+    font-size: 46px;
+  }
+}
+
+.teacher {
+  &__information {
+    @media screen and (min-width: 768px) and (max-width: 1379px) {
+      max-width: 400px;
+      margin-left: 40px;
+    }
+    @media screen and (min-width: 1380px) {
+      max-width: 640px;
+      margin-left: 30px;
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1379px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1380px) {
+      display: flex;
+      flex-basis: 530px;
+    }
+  }
+
+  &__img {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      margin-right: 37px;
+    }
+    @media screen and (min-width: 1380px) {
+      min-width: 530px;
+    }
+  }
+
+  &__name {
+    @extend %h3;
+
+    position: relative;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+
+    margin-bottom: 30px;
+
+    color: $main-color;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: $secondary-color;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 1px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__description {
+    & p {
+      @extend %p;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+
+      margin-bottom: 20px;
+
+      color: $secondary-color;
+
+      @media screen and (max-width: 1379px) {
+        &:nth-last-child(1) {
+          margin-bottom: 10px;
+        }
+      }
+      @media screen and (min-width: 1380px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__link {
+    @extend %a;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    text-decoration-line: underline;
+    color: $orange-accent;
+
+    @media screen and (min-width: 1380px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.experience {
+  &__list {
+    @extend %ul;
+
+    position: relative;
+    min-width: 250px;
+    margin-left: 27px;
+    margin-bottom: 45px;
+
+    list-style-image: url(../images/About/check.svg);
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: $orange-accent;
+      left: -26px;
+      bottom: -20px;
+      width: 20px;
+      height: 2px;
+      @media screen and (min-width: 1380px) {
+        bottom: -35px;
+      }
+    }
+    @media screen and (min-width: 1380px) {
+      margin-bottom: 65px;
+      max-width: 530px;
+    }
+  }
+
+  &__item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 20px;
+
+    color: $main-color;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+@media screen and(max-width: 767px) {
+  img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+}
