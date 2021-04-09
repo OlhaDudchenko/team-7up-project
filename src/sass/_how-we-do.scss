@@ -99,9 +99,7 @@
   display: block;
 
   width: 100%;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animated(color, background-color, box-shadow);
 
   @media screen and(max-width: 767px) {
     padding-top: 30px;
@@ -126,6 +124,7 @@
 .card__link:focus {
   background-color: $orange-accent;
   color: $white-accent;
+  box-shadow: 0 0 50px $orange-accent;
 }
 
 .card__thumb {
