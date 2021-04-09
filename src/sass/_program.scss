@@ -1,8 +1,21 @@
 .program {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
 
   background: linear-gradient(#111518 88%, $white-accent 12%);
+}
+
+@media screen and(min-width:1380px) {
+  .program::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 16.5%;
+    background: $white-accent;
+  }
 }
 
 .program__container {
@@ -163,21 +176,21 @@
     }
   }
 
-  @media screen and(min-width: 1380px) {
-    &::before {
-      content: ' ';
-      position: absolute;
+  // @media screen and(min-width: 1380px) {
+  //   &::before {
+  //     content: ' ';
+  //     position: absolute;
 
-      width: 1px;
+  //     width: 1px;
 
-      background-color: $white-accent;
-      height: calc(100% + 30px);
-      width: 1px;
-      // left: 50px;
-      top: -281px;
-      transform: rotate(90deg);
-    }
-  }
+  //     background-color: $white-accent;
+  //     height: calc(100% + 30px);
+  //     width: 1px;
+  //     // left: 50px;
+  //     top: -281px;
+  //     transform: rotate(90deg);
+  //   }
+  // }
 }
 
 .semestr__set {
@@ -259,7 +272,7 @@
     }
 
     @media screen and(min-width: 1380px) {
-      top: -41px;
+      top: -43px;
       left: 0;
       width: 17px;
       height: 16px;

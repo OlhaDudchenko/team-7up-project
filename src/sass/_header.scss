@@ -33,6 +33,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  animation: animate75 3000ms infinite 1000ms;
+
+  @keyframes animate75 {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.75);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 
   @media screen and(min-width: 768px) {
     width: 130px;
