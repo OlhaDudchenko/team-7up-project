@@ -99,6 +99,7 @@
   display: block;
 
   width: 100%;
+
   @include animated(color, background-color, box-shadow);
 
   @media screen and(max-width: 767px) {
@@ -125,6 +126,7 @@
   background-color: $orange-accent;
   color: $white-accent;
   box-shadow: 0 0 50px $orange-accent;
+  transform: scale(1.05);
 }
 
 .card__thumb {
